@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36121.58
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary.API", "BookLibrary.API\BookLibrary.API.csproj", "{9F8CB136-EFA5-46CF-AF97-38A6863BC09F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BookLib.Core", "BookLib.Core", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BookLib.Infrastructure", "BookLib.Infrastructure", "{05F81893-7F21-41BE-926B-487F1B889995}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BookLib.Migrations", "BookLib.Migrations", "{1C404AFD-1296-43DF-A5D2-667029D0F6A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{BCA71F75-90EF-483B-B709-BB2265A0F41D}"
+	ProjectSection(SolutionItems) = preProject
+		Author.cs = Author.cs
+		Book.cs = Book.cs
+		Collection.cs = Collection.cs
+		Genre.cs = Genre.cs
+		Review.cs = Review.cs
+		User.cs = User.cs
+		UserBook.cs = UserBook.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Enums", "Enums", "{7BE0168B-45D2-492E-883F-C61BA779D2AA}"
+	ProjectSection(SolutionItems) = preProject
+		ReadingStatus.cs = ReadingStatus.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{9FA10AE4-99E8-4B8C-A8EF-ADB535DAC51B}"
+	ProjectSection(SolutionItems) = preProject
+		IBookRepository.cs = IBookRepository.cs
+		ICollectionRepository.cs = ICollectionRepository.cs
+		IReviewRepository.cs = IReviewRepository.cs
+		IUserRepository.cs = IUserRepository.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{02E0D2AB-9D5C-42EF-A921-A4552E1BF671}"
+	ProjectSection(SolutionItems) = preProject
+		AuthService.cs = AuthService.cs
+		BookService.cs = BookService.cs
+		UserBookService.cs = UserBookService.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{AFF40AAA-44E3-4992-832A-F113123170BA}"
+	ProjectSection(SolutionItems) = preProject
+		BookLibContext.cs = BookLibContext.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", "{28F0CDC7-5E97-48F6-ABBC-C4635C173DA7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{C8625412-2CFD-41D3-B9B3-278564AAED14}"
+	ProjectSection(SolutionItems) = preProject
+		BookRepository.cs = BookRepository.cs
+		CollectionRepository.cs = CollectionRepository.cs
+		ReviewRepository.cs = ReviewRepository.cs
+		UserRepository.cs = UserRepository.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Seed", "Seed", "{FA27D001-5A56-4B2D-89E0-4A72BB6068ED}"
+	ProjectSection(SolutionItems) = preProject
+		DataSeeder.cs = DataSeeder.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F8CB136-EFA5-46CF-AF97-38A6863BC09F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F8CB136-EFA5-46CF-AF97-38A6863BC09F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F8CB136-EFA5-46CF-AF97-38A6863BC09F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F8CB136-EFA5-46CF-AF97-38A6863BC09F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BCA71F75-90EF-483B-B709-BB2265A0F41D} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{7BE0168B-45D2-492E-883F-C61BA779D2AA} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{9FA10AE4-99E8-4B8C-A8EF-ADB535DAC51B} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{02E0D2AB-9D5C-42EF-A921-A4552E1BF671} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{AFF40AAA-44E3-4992-832A-F113123170BA} = {05F81893-7F21-41BE-926B-487F1B889995}
+		{28F0CDC7-5E97-48F6-ABBC-C4635C173DA7} = {05F81893-7F21-41BE-926B-487F1B889995}
+		{C8625412-2CFD-41D3-B9B3-278564AAED14} = {05F81893-7F21-41BE-926B-487F1B889995}
+		{FA27D001-5A56-4B2D-89E0-4A72BB6068ED} = {05F81893-7F21-41BE-926B-487F1B889995}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3690A3E1-70F6-4ED8-95B7-26C220FFB42F}
+	EndGlobalSection
+EndGlobal
